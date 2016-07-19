@@ -1,0 +1,13 @@
+devices:
+  PowerArduino:
+    type: arduino
+    config:
+      serialPort: COM4
+      baudRate: 9600
+    portmap:
+      led: 13
+      relay: 5
+      fan: 2
+      monitors: 3
+api:
+  address: ":5903"
