@@ -2,7 +2,7 @@ package main
 
 import (
 	"errors"
-	et "github.com/3ocene/explosive-transistor"
+	et "github.com/ben-turner/explosive-transistor"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
 	"os"

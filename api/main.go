@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	et "github.com/3ocene/explosive-transistor"
-	"github.com/3ocene/explosive-transistor/devices"
 	"github.com/Sirupsen/logrus"
+	et "github.com/ben-turner/explosive-transistor"
+	"github.com/ben-turner/explosive-transistor/devices"
 	"github.com/gorilla/mux"
 	"github.com/kr/pretty"
 	"net/http"
