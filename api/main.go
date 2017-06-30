@@ -33,6 +33,12 @@ func newApi(c *Config) (a api, err error) {
 				Ports:      deviceConfig.Portmap,
 				Name:       key,
 			})
+		case "hue":
+			a.devices[key], err = devices.NewHueDevice(&devices.HueConfig{
+				Ip:    deviceConfig.Config["ip"].(string),
+				Key:   deviceConfig.Config["key"].(string),
+				Ports: deviceConfig.Portmap,
+			})
 		default:
 			err = fmt.Errorf("No device of type %v available", deviceConfig.Type)
 		}

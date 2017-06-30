@@ -1,13 +1,21 @@
 devices:
-  PowerArduino:
-    type: arduino
+  # powerArduino:
+  #   type: arduino
+  #   config:
+  #     serialPort: COM4
+  #     baudRate: 9600
+  #   portmap:
+  #     led: 13
+  #     relay: 5
+  #     fan: 2
+  #     monitors: 3
+  philipsHue:
+    type: hue
     config:
-      serialPort: COM4
-      baudRate: 9600
+      ip: 192.168.1.73
+      key: 68cea06a56c93e016c02988d4a2ca565
     portmap:
-      led: 13
-      relay: 5
-      fan: 2
-      monitors: 3
+      ceiling1: 1
+      ceiling2: 2
 api:
   address: ":5903"
